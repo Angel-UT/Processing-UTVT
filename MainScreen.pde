@@ -8,6 +8,10 @@ class MainScreen {
   MainScreen(){}
   
   void display(){
-    background(255,0,255);
+    background(255);
+    fill(0);
+    stroke(0);
+    textAlign(CENTER, CENTER);
+    text(languages.getMessage(2), 300, 300);
   }
 }

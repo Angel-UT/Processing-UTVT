@@ -6,8 +6,12 @@
 
 class GameScreen {
   GameScreen(){}
-  
+    
   void display(){
-    background(255,255,0);
+    background(0);
+    fill(255);
+    stroke(255);
+    textAlign(CENTER, CENTER);
+    text(languages.getMessage(0), 400, 300);
   }
 }

@@ -7,8 +7,13 @@ final int MAINSCREEN = 0;
 final int GAMESCREEN = 1;
 final int LOADSCREEN = 2;
 
+final int LANGUAGE_SPANISH = 0;
+final int LANGUAGE_ENGLISH = 1;
+
 //PImage icon;
+PFont typographyTitle;
 Gamecontrol gco;
+Languages languages;
 
 void setup() {
   //icon = loadImage("icon.png"); //cargando imagen
@@ -16,6 +21,9 @@ void setup() {
   windowMove(100,100);
   windowTitle("Cuerbeat 'Em Up IDGS102 The Game");
   //surface.setIcon(icon);  
+  typographyTitle = createFont("Arial", 32);
+  textFont(typographyTitle);
+  languages = new Languages(LANGUAGE_ENGLISH, 3);
   gco = new Gamecontrol();
 }
 

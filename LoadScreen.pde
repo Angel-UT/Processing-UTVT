@@ -8,6 +8,10 @@ class LoadScreen {
   LoadScreen(){}
   
   void display(){
-    background(0,255,255);
+    background(128);
+    fill(255);
+    stroke(255);
+    textAlign(CENTER, CENTER);
+    text(languages.getMessage(1), 300, 300);
   }
 }
